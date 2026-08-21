@@ -23,7 +23,7 @@ As linhas verticais tracejadas abaixo de cada participante representam a linha d
 ## Sequência de mensagens
 
 **1 — Criação do Builder**
-O Cliente cria uma instância concreta do Builder`ComboFastFoodBuilder`, que implementa a interface `ComboBuilder`.
+O Cliente cria uma instância concreta do Builder ComboFastFoodBuilder, que implementa a interface ComboBuilder.
 
 **1.1 — Envio do pedido ao Atendente**
 O Cliente entrega essa instância ao Atendente, solicitando que o pedido seja montado.
@@ -40,16 +40,16 @@ O Atendente solicita a adição do refrigerante.
 **1.1.4 — Adição do brinde**
 O Atendente solicita a adição do brinde que acompanha o combo.
 
-Essas quatro chamadas seguem o mesmo padrão: o Atendente instrui o Builder, um item por vez, respeitando a ordem definida para a montagem.
+Essas quatro chamadas seguem o mesmo padrão que o Atendente instrui o Builder, um item por vez, respeitando a ordem definida para a montagem.
 
 **1.2 — Solicitação do combo finalizado**
-Após adicionar todos os itens, o Atendente solicita ao Builder o combo pronto, por meio do método `getCombo()`.
+Após adicionar todos os itens, o Atendente solicita ao Builder o combo pronto, por meio do método getCombo().
 
 **1.2.1 — Criação do objeto Combo**
-É nesse momento que o Builder efetivamente cria o objeto `Combo`, reunindo tudo o que foi definido nas etapas anteriores.
+É nesse momento que o Builder efetivamente cria o objeto Combo, reunindo tudo o que foi definido nas etapas anteriores.
 
 **1.3 — Retorno do combo ao Atendente**
-O Builder devolve o objeto `Combo` recém-criado ao Atendente. Essa mensagem é representada por uma seta tracejada, por se tratar de um retorno, e não de uma nova solicitação.
+O Builder devolve o objeto Combo recém-criado ao Atendente. Essa mensagem é representada por uma seta tracejada, por se tratar de um retorno, e não de uma nova solicitação.
 
 **1.4 — Entrega ao Cliente**
 Por fim, o Atendente entrega o combo pronto ao Cliente, finalizando o fluxo.
