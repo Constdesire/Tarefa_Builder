@@ -2,6 +2,8 @@
 
 ![Diagrama de sequência do padrão Builder](./diagrama_sequencia_combo_builder.png)
 
+DESIREE E NICOLE
+
 ## Participantes do diagrama
 
 **Cliente**
@@ -54,6 +56,6 @@ Por fim, o Atendente entrega o combo pronto ao Cliente, finalizando o fluxo.
 
 ## Observação sobre o padrão aplicado
 
-O Atendente (Diretor) nunca interage diretamente com o produto final durante a montagem ele apenas emite instruções sequenciais ao Builder. Quem monta e entrega o combo é o Builder.
+O Atendente (Diretor) nunca interage diretamente com o produto final durante a montagem ele apenas emite instruções sequenciais ao Builder. Quem monta e entrega o combo é o Builder. Se precisar seja criar uma variação do combo tipo um combo vegetariano ou um combo infantil, é só implementar um novo Builder que use a mesma interface. A lógica do Atendente permanece sem mudar, porque ele depende só da abstração ComboBuilder, e não de uma implementação específica.
 
 DESIREE E NICOLE
